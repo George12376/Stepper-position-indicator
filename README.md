@@ -3,14 +3,14 @@
 ## Členové týmu
 Jiří Vocilka, Ondřej Chmela, Martin Kovář, Matěj Nachtnebel
 
-## Problem statement & summary of the solution
+## Popis problému a shrnutí řešení
 
 Tento projekt řeší přesné vizuální zobrazování polohy pomocí krokového motoru.
 
 * **Nastavení cílové polohy:** Otáčením rotačního enkodéru uživatel nastavuje požadovanou cílovou pozici.
 * **Řízení motoru:** Krokový motor automaticky otáčí fyzický ukazatel na nově nastavenou polohu.
 * **Zobrazení dat na displeji:** Na displeji se v reálném čase zobrazuje aktuální a cílová poloha včetně stavových informací.
-* **Nulování referenční polohy (Re-zero):** Stiskem mikrospínače se kalibruje nulová pozice pro přesné odměřování.
+* **Nulování referenční polohy :** Stiskem mikrospínače se kalibruje nulová pozice pro přesné odměřování.
 * **Stavová indikace:** RGB LED dioda vizuálně signalizuje provozní stavy systému (pohyb motoru, dosažení cíle, nulování).
 
 ## List komponent
