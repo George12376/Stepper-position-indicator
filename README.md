@@ -8,7 +8,7 @@ Jiří Vocilka, Ondřej Chmela, Martin Kovář, Matěj Nachtnebel
 Raspberry Pi Pico W\
 Nema 17 - krokový motor\
 A4988 - motor driver\
-Waveshare - Displej\
+Waveshare 1.3 inch- Displej\
 ky-040 - Encoder\
 Mikrospínač\
 RGB Led
