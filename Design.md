@@ -25,3 +25,6 @@ pri prechode medzi zap a vyp zabzučí
 
 Enkóder 
 Podľa smeru otáčania sa bude otáčať aj motor
+
+Display 
+Zobrazuje aktuálny uhol motora voči nule a rýchlosť na jeden step encoderu
