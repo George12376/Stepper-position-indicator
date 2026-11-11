@@ -5,3 +5,8 @@
 ## Schéma zapojení
 
 ![Schéma zapojení](./Images/Schema_V1.png)
+
+
+## 3D Model 
+
+![3D Model](./Images/3Dmodel.png).
