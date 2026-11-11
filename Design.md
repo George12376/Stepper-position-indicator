@@ -4,7 +4,7 @@
 
 ## Schéma zapojení
 
-![Schéma zapojení](./Images/%obrazek%)
+![Schéma zapojení](./Images/Schema_V1.png)
 
 
 ## Správanie
