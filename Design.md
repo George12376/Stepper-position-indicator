@@ -9,4 +9,4 @@
 
 ## 3D Model 
 
-![3D Model](./Images/3Dmodel.png).
+![3D Model](./Images/3D_model.png).
