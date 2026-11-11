@@ -22,3 +22,6 @@ Dlhé stlačenie -> Zapnutie / vypnutie ovládaču motora ( po znova zapnutí zn
 
 Buzzer
 pri prechode medzi zap a vyp zabzučí 
+
+Enkóder 
+Podľa smeru otáčania sa bude otáčať aj motor
