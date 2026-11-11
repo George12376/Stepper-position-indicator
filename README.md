@@ -13,5 +13,5 @@ Waveshare 1.3 inch- Displej\
 Mikrospínač - nastavení počátku (re-zero reference)\
 RGB Led
 
-## Blokový diagram
+
 
