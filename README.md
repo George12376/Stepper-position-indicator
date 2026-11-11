@@ -9,8 +9,8 @@ Raspberry Pi Pico W\
 Nema 17 - krokový motor\
 A4988 - motor driver\
 Waveshare 1.3 inch- Displej\
-ky-040 - Encoder\
-Mikrospínač\
+2x ky-040 - Encoder\
+Mikrospínač - nastavení počátku (re-zero reference)\
 RGB Led
 
 ## Blokový diagram
