@@ -9,7 +9,7 @@
 
 ## 3D Model 
 
-![3D Model](./Images/3D_model.png).
+![3D Model](./Images/3D_model_V2.png).
 
 ## DPS
 ![Nárvh horná vrstva](./Images/Layer_Top_V1.png).
