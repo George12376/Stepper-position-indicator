@@ -35,6 +35,15 @@ Tento projekt řeší přesné vizuální zobrazování polohy pomocí krokovéh
 
 ## Časování
 
+| Část systému | Jak se spouští | Jak často běží | Co přesně dělá |
+| :--- | :--- | :--- | :--- |
+| **Enkodér (otáčení)** | Přerušení (`IRQ`) | Okamžitě při otočení | Hned zaznamená změnu polohy, aby se neztratil žádný krok. |
+| **Krokový motor** | Asynchronní úloha | 125 Hz až 1000 Hz (pauza 8–1 ms) | Otáčí motorem na cílovou polohu s plynulým rozjezdem. |
+| **Tlačítka** | Opakovaná kontrola | 100 Hz (každých 10 ms) | Kontroluje stisk enkodéru (rychlost / vypnutí) a mikrospínač nuly. |
+| **OLED displej** | Opakovaná kontrola | ~6,7 Hz (každých 150 ms) | Překreslí údaje na obrazovce, ale jen když se nějaká hodnota změnila. |
+| **RGB LED dioda** | Opakovaná kontrola | 10 Hz (každých 100 ms) | Svítí podle zvolené rychlosti, nebo bliká červeně (500 ms), když je motor vypnutý. |
+| **Bzučák** | Opakovaná kontrola | 50 Hz (každých 20 ms) | Pípne při zapnutí nebo vypnutí motoru. |
+
 * Krokový motor - update polohy ukazatele s frekvencí 4 Hz
 * Displej - vypisování dat polohy s obnovovací frekvencí 60 Hz
 * Rotační enkodér - snímání změny s frekvencí 100 Hz
