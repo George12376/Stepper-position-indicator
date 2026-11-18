@@ -31,6 +31,7 @@ Tento projekt řeší přesné vizuální zobrazování polohy pomocí krokovéh
 | 2x | ky-040 | Rotační enkodér – jeho otáčením uživatel nastavuje požadovanou cílovou pozici. |
 | 1x | Mikrospínač | Nastavení počátku (re-zero) – stiskem se kalibruje nulová pozice pro přesné odměřování. |
 | 1x | RGB&nbsp;Led | Stavová indikace – vizuálně signalizuje provozní stavy systému (pohyb motoru, dosažení cíle, nulování). |
+| 1x | Bzučák HW-508 | Zvuková indikace – zaznění tónu při změně stavu motoru|
 
 ## Časování
 
