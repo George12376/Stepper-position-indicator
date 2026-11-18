@@ -32,5 +32,14 @@ Tento projekt řeší přesné vizuální zobrazování polohy pomocí krokovéh
 | 1x | Mikrospínač | Nastavení počátku (re-zero) – stiskem se kalibruje nulová pozice pro přesné odměřování. |
 | 1x | RGB&nbsp;Led | Stavová indikace – vizuálně signalizuje provozní stavy systému (pohyb motoru, dosažení cíle, nulování). |
 
+## Blokový diagram
+
+![Blokový diagram](./Images/Block%20schematic.drawio.png)
+
+## Schéma zapojení
+
+![Schéma zapojení](./Images/Schema_V2.png)
+
+
 
 
