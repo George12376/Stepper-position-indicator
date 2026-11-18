@@ -32,6 +32,13 @@ Tento projekt řeší přesné vizuální zobrazování polohy pomocí krokovéh
 | 1x | Mikrospínač | Nastavení počátku (re-zero) – stiskem se kalibruje nulová pozice pro přesné odměřování. |
 | 1x | RGB&nbsp;Led | Stavová indikace – vizuálně signalizuje provozní stavy systému (pohyb motoru, dosažení cíle, nulování). |
 
+## Časování
+
+Krokový motor - update polohy s frekvencí 4 Hz
+Displej - vypisování dat s frekvencí 60 Hz
+Rotační enkodér - snímání s frekvencí 100 Hz
+Stavová indikace - update stavu s frekvencí 10hz
+
 ## Blokový diagram
 
 ![Blokový diagram](./Images/Block%20schematic.drawio.png)
