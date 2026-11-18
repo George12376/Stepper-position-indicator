@@ -34,10 +34,10 @@ Tento projekt řeší přesné vizuální zobrazování polohy pomocí krokovéh
 
 ## Časování
 
-Krokový motor - update polohy s frekvencí 4 Hz
-Displej - vypisování dat s frekvencí 60 Hz
-Rotační enkodér - snímání s frekvencí 100 Hz
-Stavová indikace - update stavu s frekvencí 10hz
+* Krokový motor - update polohy ukazatele s frekvencí 4 Hz
+* Displej - vypisování dat polohy s obnovovací frekvencí 60 Hz
+* Rotační enkodér - snímání změny s frekvencí 100 Hz
+* Stavová indikace - update stavu systému s frekvencí 10hz
 
 ## Blokový diagram
 
