@@ -44,11 +44,6 @@ Tento projekt řeší přesné vizuální zobrazování polohy pomocí krokovéh
 | **RGB LED dioda** | Opakovaná kontrola | 10 Hz (každých 100 ms) | Svítí podle zvolené rychlosti, nebo bliká červeně (500 ms), když je motor vypnutý. |
 | **Bzučák** | Opakovaná kontrola | 50 Hz (každých 20 ms) | Pípne při zapnutí nebo vypnutí motoru. |
 
-* Krokový motor - update polohy ukazatele s frekvencí 4 Hz
-* Displej - vypisování dat polohy s obnovovací frekvencí 60 Hz
-* Rotační enkodér - snímání změny s frekvencí 100 Hz
-* Stavová indikace - update stavu systému s frekvencí 10hz
-
 ## Blokový diagram
 
 ![Blokový diagram](./Images/Block%20schematic.drawio.png)
