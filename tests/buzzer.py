@@ -1,38 +1,41 @@
 from machine import Pin, PWM
 import time
 
-class Buzzer:
-    def __init__(self, pin_num):
-        self.pwm = PWM(Pin(pin_num))
-        self.pwm.duty_u16(0)
 
-    def _tone(self, freq, duration):
-        self.pwm.freq(freq)
-        self.pwm.duty_u16(32768)
-        time.sleep(duration)
-        self.off()
+def test_buzzer_stavy():
+    print("Test stavů bzučáku spuštěn (ukončíš přes Ctrl+C)")
 
-    def beep_driver_on(self):
-        # Zvuk při zapnutí ovladače motoru
-        self._tone(1200, 0.1)
-        time.sleep(0.05)
-        self._tone(1800, 0.15)
+    # Inicializace bzučáku na pinu GP13 (podle schématu):
+    buzzer_pwm = PWM(Pin(13))
+    buzzer_pwm.duty_u16(0)
 
-    def beep_driver_off(self):
-        # Zvuk při vypnutí ovladače motoru
-        self._tone(1800, 0.1)
-        time.sleep(0.05)
-        self._tone(1000, 0.2)
+    def zahraj_ton(frekvence, doba_trvani):
+        buzzer_pwm.freq(frekvence)
+        buzzer_pwm.duty_u16(32768)  # 50 % střída pro čistý zvuk
+        time.sleep(doba_trvani)
+        buzzer_pwm.duty_u16(0)
 
-    def off(self):
-        self.pwm.duty_u16(0)
+    try:
+        while True:
+            # 1. Zapnutí ovladače motoru -> Vzestupný tón
+            print("Stav: Ovladač motoru zapnutý (Vzestupný tón)")
+            zahraj_ton(1200, 0.1)
+            time.sleep(0.05)
+            zahraj_ton(1800, 0.15)
+            time.sleep(2)
+
+            # 2. Vypnutí ovladače motoru -> Sestupný tón
+            print("Stav: Ovladač motoru vypnutý (Sestupný tón)")
+            zahraj_ton(1800, 0.1)
+            time.sleep(0.05)
+            zahraj_ton(1000, 0.2)
+            time.sleep(2)
+
+    except KeyboardInterrupt:
+        print("\nTest ukončen.")
+        buzzer_pwm.duty_u16(0)
+        buzzer_pwm.deinit()
 
 
-# Test bzucaku
-buzzer = Buzzer(13)
-
-print("1. Ovladac motoru ZAPNUTYabuzzer.beep_driver_on()
-time.sleep(1.5)
-
-print("2. Ovladac motoru VYPNUTY")
-buzzer.beep_driver_off()
+if __name__ == "__main__":
+    test_buzzer_stavy()
