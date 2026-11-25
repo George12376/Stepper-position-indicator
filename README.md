@@ -51,6 +51,27 @@ Tento projekt řeší přesné vizuální zobrazování polohy pomocí krokovéh
 | **RGB LED dioda** | Opakovaná kontrola | 10 Hz (každých 100 ms) | Svítí podle zvolené rychlosti, nebo bliká červeně (500 ms), když je motor vypnutý. |
 | **Bzučák** | Opakovaná kontrola | 50 Hz (každých 20 ms) | Pípne při zapnutí nebo vypnutí motoru. |
 
+## Softwarové prostředí a verze knihoven
+
+Projekt je naprogramován v jazyce **MicroPython** pro mikrokontrolér **Raspberry Pi Pico W (RP2040)** ve vývojovém prostředí **VS Code** s rozšířením **MicroPico**. Nepoužívá žádné externí balíčky třetích stran instalované přes `mip`/`pip` – veškerá aplikační logika staví na standardních modulech firmwaru a vlastních ovladačích ve složce [`lib`](lib).
+
+### Verze firmwaru
+* **MicroPython:** `v1.29.0` (sestavení `2026-08-24`, `GNU 16.1.0 MinSizeRel`)
+* **Cílový port / deska:** `rp2` – `Raspberry Pi Pico W with RP2040`
+
+### Použité vestavěné knihovny (součást firmwaru MicroPython v1.29.0)
+* **`machine`** (`Pin`, `PWM`, `I2C` / `SoftI2C`, `disable_irq`, `enable_irq`) – řízení GPIO pinů, PWM signálů pro RGB LED a bzučák, I2C komunikace s displejem a bezpečné čtení dat z přerušení.
+* **`asyncio` (`uasyncio`)** – kooperativní multitasking pro neblokující souběžný běh řízení motoru, čtení vstupů, překreslování OLED displeje, stavové LED a bzučáku.
+* **`framebuf`** – grafický framebuffer (`MONO_VLSB`) pro vykreslování textu na OLED displej.
+* **`time`**, **`micropython`** (`const`) – mikrosekundové/milisekundové časování krokování a paměťová optimalizace konstant.
+
+### Vlastní a upravené knihovny projektu (`lib/`)
+* **[`ssd1306.py`](lib/ssd1306.py)** – vlastní implementace ovladače se stránkovým adresováním pro 1,3" I2C OLED displej 128×64 s řadičem **SH1106** (zachovává kompatibilní rozhraní `SSD1306_I2C`).
+* **[`stepper.py`](lib/stepper.py)** – ovládání driveru A4988, nastavení mikrokrokování, automatická kalibrace polohy (*homing*) a softwarové limity pohybu (`0–760` kroků).
+* **[`encoder.py`](lib/encoder.py)** – obsluha rotačního enkodéru KY-040 pomocí kvadraturního stavového automatu (Grayův kód) se softwarovým ošetřením zákmitů tlačítka (*debounce*).
+* **[`status_led.py`](lib/status_led.py)** – PWM řízení stavové RGB LED pro indikaci rychlosti a stavu povolení driveru.
+* **[`buzzer.py`](lib/buzzer.py)** – neblokující generování zvukové signalizace na pasivním bzučáku pomocí PWM.
+
 ## Blokový diagram
 
 ![Blokový diagram](./Images/Block%20schematic.drawio_V3.png)
