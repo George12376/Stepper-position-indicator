@@ -11,16 +11,16 @@
 Tento projekt řeší přesné vizuální zobrazování polohy pomocí krokového motoru.
 
 * **Nastavení cílové polohy:** Otáčením rotačního enkodéru uživatel nastavuje požadovanou cílovou pozici.
-* **Zapnutie a vypnutie ovládača motoru:** Dlhým stlačeným tlačidla na enkodéri sa vypne/ zapne ovládač motora. Zaznie tón pri zmene.
-* **Zmena rýchlosti:** Krátkym stlačením tlačidla na enkodéri sa zmení rýchlosť pohybu motoru.
+* **Zapnutí a vypnutí ovladače motoru:** Dlouhým stiskem tlačítka na enkodéru se vypne/zapne ovladač motoru. Při změně zazní tón.
+* **Změna rychlosti:** Krátkým stiskem tlačítka na enkodéru se změní rychlost pohybu motoru.
 * **Řízení motoru:** Krokový motor automaticky otáčí fyzický ukazatel na nově nastavenou polohu.
 * **Zobrazení dat na displeji:** Na displeji se v reálném čase zobrazuje aktuální a cílová poloha včetně stavových informací.
-* **Nulování referenční polohy :** Stiskem mikrospínače se kalibruje nulová pozice pro přesné odměřování.
+* **Nulování referenční polohy:** Stiskem mikrospínače se kalibruje nulová pozice pro přesné odměřování.
 * **Stavová indikace:** RGB LED dioda vizuálně signalizuje provozní stavy systému (pohyb motoru, dosažení cíle, nulování).
-  * Červená bliká -> Ovládač motora vypnutý 
-  * Zelená -> Najnižšia rýchlosť 
-  * Žltá -> Stredná rýchlosť
-  * Oranžová -> Najrýchlejšia rýchlosť
+  * Červená bliká -> Ovladač motoru vypnutý
+  * Zelená -> Nejnižší rychlost
+  * Žlutá -> Střední rychlost
+  * Oranžová -> Nejvyšší rychlost
 
 
 ## List komponent
