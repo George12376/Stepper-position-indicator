@@ -67,6 +67,10 @@ Před finálním sestavením byly jednotlivé moduly otestovány samostatně pom
 - **Generování tónů pomocí PWM:** Ověřeno buzení pasivního měniče signálem PWM (50% střída) a čisté vypnutí výstupu (`duty_u16(0)`) po doznění tónu.
 - **Akustická odezva stavů:** Otestováno přehrání dvoutónových signálů pro rozlišení stavu driveru – vzestupná melodie (1200 Hz → 1800 Hz) při zapnutí a sestupná melodie (1800 Hz → 1000 Hz) při vypnutí ovladače motoru.
 
+### 3. Zobrazovací jednotka ([OLED displej](./tests/displej.py))
+- **Komunikace a inicializace:** Ověřena detekce displeje (128×64 px) na sběrnici I2C (400 kHz) a správné vykreslování grafiky i textu přes framebuffer.
+- **Vykreslování stavů:** Otestováno zobrazení úvodního nulování (`NULOVANI...`), dynamická aktualizace aktuální a cílové polohy při pohybu i indikace stavu motoru (`ZAP`/`VYP`) a zvolené rychlosti.
+
 
 
 
