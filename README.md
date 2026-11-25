@@ -60,7 +60,7 @@ Tento projekt řeší přesné vizuální zobrazování polohy pomocí krokovéh
 Před finálním sestavením byly jednotlivé moduly otestovány samostatně pomocí skriptů ve složce [`tests`](./tests):
 
 ### 1. Stavová indikace ([RGB LED](./tests/RGB_LED.py))
-- **Zapojení a funkčnost:** Ověřena správná polarita (společná katoda na `GND`) a reakce všech barevných kanálů.
+- **Zapojení a funkčnost:** Ověřena správná polarita (společná katoda na `GND`) a funkce aktivních barevných kanálů (červený a zelený).
 - **PWM stavy:** Otestováno plynulé míchání barev pro jednotlivé rychlosti (zelená – nízká, žlutá – střední, oranžová – vysoká) i červené blikání (500 ms) při vypnutém motoru.
 
 ### 2. Zvuková signalizace ([Pasivní bzučák](./tests/buzzer.py))
