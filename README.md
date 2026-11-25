@@ -55,6 +55,10 @@ Tento projekt řeší přesné vizuální zobrazování polohy pomocí krokovéh
 
 ![Schéma zapojení](./Images/Schema_V2.png)
 
+## Testování a ověření (Testing & Verification)
+
+Před finálním sestavením byly jednotlivé hardwarové moduly i programové části otestovány samostatně pomocí testovacích skriptů (uložených ve složce [`tests/`](./tests))
+
 
 
 
