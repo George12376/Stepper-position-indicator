@@ -55,7 +55,7 @@ Tento projekt řeší přesné vizuální zobrazování polohy pomocí krokovéh
 
 ![Schéma zapojení](./Images/Schema_V2.png)
 
-## Testování a ověření (Testing & Verification)
+## Testování a ověření
 
 Před finálním sestavením byly jednotlivé moduly otestovány samostatně pomocí skriptů ve složce [`tests`](./tests):
 
