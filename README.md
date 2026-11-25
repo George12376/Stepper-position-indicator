@@ -1,6 +1,6 @@
 # Stepper-position-indicator
 
-![MicroPython](https://img.shields.io/badge/MicroPython-1.24+-blue)
+![MicroPython](https://img.shields.io/badge/MicroPython-1.29+-blue)
 ![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi%20Pico-red)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
