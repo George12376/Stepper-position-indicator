@@ -9,7 +9,7 @@
 
 ## 3D Model 
 
-![3D Model](./Images/3D_Model_V4.png)
+![3D Model](./Images/3D_Model_V5.png)
 
 ## Realization 
 ![Realization](./Images/Prototype_V1.jpg)
