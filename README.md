@@ -49,7 +49,7 @@ Tento projekt řeší přesné vizuální zobrazování polohy pomocí krokovéh
 
 ## Blokový diagram
 
-![Blokový diagram](./Images/Block%20schematic.drawio_V2.png)
+![Blokový diagram](./Images/Block%20schematic.drawio_V3.png)
 
 ## Schéma zapojení
 
