@@ -55,13 +55,7 @@ Tento projekt řeší přesné vizuální zobrazování polohy pomocí krokovéh
 
 ![Schéma zapojení](./Images/Schema_V2.png)
 
-## Testování a ověření (Testing & Verification)
 
-Před finálním sestavením byly jednotlivé moduly otestovány samostatně pomocí skriptů ve složce [`tests`](./tests):
-
-### 1. Stavová indikace ([RGB LED](./tests/test_rgb.py))
-- **Zapojení a piny:** Ověřena společná katoda (`GND`) a přiřazení vývodů (`GP14` – červená, `GP13` – zelená, `GP12` – modrá).
-- **PWM stavy:** Otestováno míchání barev pro rychlosti (zelená, žlutá, oranžová) i červené blikání (500 ms) při vypnutém motoru.
 
 
 
