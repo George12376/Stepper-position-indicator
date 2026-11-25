@@ -1,5 +1,9 @@
 # Stepper-position-indicator
 
+![MicroPython](https://img.shields.io/badge/MicroPython-1.29.0-00979D?style=for-the-badge)
+![Platform](https://img.shields.io/badge/Platform-Raspberry_Pi_Pico_W-C51A4A?style=for-the-badge)
+![Hardware](https://img.shields.io/badge/Board-Pico_Gravity-333333?style=for-the-badge)
+
 ## Členové týmu
 * Jiří Vocilka -
 * Ondřej Chmela -
