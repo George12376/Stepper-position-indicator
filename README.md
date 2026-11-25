@@ -30,7 +30,7 @@ Tento projekt řeší přesné vizuální zobrazování polohy pomocí krokovéh
 | 1x | Raspberry&nbsp;Pi&nbsp;Pico&nbsp;W | Řídicí mikrokontrolér (mozek celého systému), zpracovává vstupy a řídí ostatní komponenty. |
 | 1x | Nema&nbsp;17 | Krokový motor – automaticky otáčí fyzický ukazatel na nově nastavenou polohu. |
 | 1x | A4988 | Motor driver – obvod sloužící k řízení krokového motoru. |
-| 1x | Waveshare&nbsp;1.3&nbsp;inch | Displej – v reálném čase zobrazuje aktuální a cílovou polohu včetně stavových informací. |
+| 1x | 1.30"IIC Ver. 3.0 | Displej – v reálném čase zobrazuje aktuální a cílovou polohu včetně stavových informací. |
 | 1x | ky-040 | Rotační enkodér – jeho otáčením uživatel nastavuje požadovanou cílovou pozici. |
 | 1x | Mikrospínač | Nastavení počátku (re-zero) – stiskem se kalibruje nulová pozice pro přesné odměřování. |
 | 1x | RGB&nbsp;Led | Stavová indikace – vizuálně signalizuje provozní stavy systému (pohyb motoru, dosažení cíle, nulování). |
@@ -49,11 +49,11 @@ Tento projekt řeší přesné vizuální zobrazování polohy pomocí krokovéh
 
 ## Blokový diagram
 
-![Blokový diagram](./Images/Block%20schematic.drawio.png)
+![Blokový diagram](./Images/Block%20schematic.drawio_V2.png)
 
 ## Schéma zapojení
 
-![Schéma zapojení](./Images/Schema_V2.png)
+![Schéma zapojení](./Images/Schema_V3.png)
 
 ## Testování a ověření
 
