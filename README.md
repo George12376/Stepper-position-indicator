@@ -1,7 +1,10 @@
 # Stepper-position-indicator
 
 ## Členové týmu
-Jiří Vocilka, Ondřej Chmela, Martin Kovář, Matěj Nachtnebel
+* Jiří Vocilka -
+* Ondřej Chmela -
+* Martin Kovář -
+* Matěj Nachtnebel -
 
 ## Popis problému a shrnutí řešení
 
