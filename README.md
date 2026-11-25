@@ -57,11 +57,11 @@ Tento projekt řeší přesné vizuální zobrazování polohy pomocí krokovéh
 
 ## Testování a ověření (Testing & Verification)
 
-Před finálním sestavením byly jednotlivé hardwarové moduly i programové části otestovány samostatně pomocí testovacích skriptů [`tests`](./tests):
+Před finálním sestavením byly jednotlivé moduly otestovány samostatně pomocí skriptů ve složce [`tests`](./tests):
 
 ### 1. Stavová indikace ([RGB LED](./tests/test_rgb.py))
-- **Ověření zapojení a pinů:** Diagnostickým testem jednotlivých vývodů ověřeno zapojení diody se společnou katodou (na `GND`) a skutečné přiřazení barevných kanálů (`GP14` – červená, `GP13` – zelená, `GP12` – modrá).
-- **PWM míchání barev a stavů:** Otestována plynulá regulace jasu pomocí PWM (frekvence 1 kHz) pro zobrazení rychlostních režimů (zelená pro nízkou, žlutá pro střední a oranžová pro vysokou rychlost) i červené blikání v intervalu 500 ms při vypnutém ovladači motoru.
+- **Zapojení a piny:** Ověřena společná katoda (`GND`) a přiřazení vývodů (`GP14` – červená, `GP13` – zelená, `GP12` – modrá).
+- **PWM stavy:** Otestováno míchání barev pro rychlosti (zelená, žlutá, oranžová) i červené blikání (500 ms) při vypnutém motoru.
 
 
 
