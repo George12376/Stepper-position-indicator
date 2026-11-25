@@ -71,6 +71,11 @@ Před finálním sestavením byly jednotlivé moduly otestovány samostatně pom
 - **Komunikace a inicializace:** Ověřena detekce displeje (128×64 px) na sběrnici I2C (400 kHz) a správné vykreslování grafiky i textu přes framebuffer.
 - **Vykreslování stavů:** Otestováno zobrazení úvodního nulování (`NULOVANI...`), dynamická aktualizace aktuální a cílové polohy při pohybu i indikace stavu motoru (`ZAP`/`VYP`) a zvolené rychlosti.
 
+### 3. Pohon a řízení polohy ([Krokový motor](tests/test_motor.py))
+
+* **Řídicí logika a režim driveru:** Ověřena správná inicializace driveru A4988 přes GPIO piny – povolení výkonových výstupů (`ENA = 0`), probuzení a uvolnění resetu (`SLP = 1`, `RST = 1`), pevný směr otáčení (`DIR = 1`) a nastavení celokrokového režimu (`MS1`–`MS3 = 0`) při nastaveném proudovém omezení (`Vref` ≈ 0,5 V).
+* **Pomalý test krokování (`STEP`):** Otestováno generování 40 pulzů na pinu `STEP` (`GPIO17`) s periodou 1 s (500 ms `HIGH` / 500 ms `LOW`), což umožnilo vizuálně ověřit pravidelné krokování hřídele, správné zapojení cívek motoru i přímé proměření logických úrovní multimetrem.
+
 
 
 
