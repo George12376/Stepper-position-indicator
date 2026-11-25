@@ -55,10 +55,6 @@ Tento projekt řeší přesné vizuální zobrazování polohy pomocí krokovéh
 
 Projekt je naprogramován v jazyce **MicroPython** pro mikrokontrolér **Raspberry Pi Pico W (RP2040)** ve vývojovém prostředí **VS Code** s rozšířením **MicroPico**. Nepoužívá žádné externí balíčky třetích stran instalované přes `mip`/`pip` – veškerá aplikační logika staví na standardních modulech firmwaru a vlastních ovladačích ve složce [`lib`](lib).
 
-### Verze firmwaru
-* **MicroPython:** `v1.29.0` (sestavení `2026-08-24`, `GNU 16.1.0 MinSizeRel`)
-* **Cílový port / deska:** `rp2` – `Raspberry Pi Pico W with RP2040`
-
 ### Použité vestavěné knihovny (součást firmwaru MicroPython v1.29.0)
 * **`machine`** (`Pin`, `PWM`, `I2C` / `SoftI2C`, `disable_irq`, `enable_irq`) – řízení GPIO pinů, PWM signálů pro RGB LED a bzučák, I2C komunikace s displejem a bezpečné čtení dat z přerušení.
 * **`asyncio` (`uasyncio`)** – kooperativní multitasking pro neblokující souběžný běh řízení motoru, čtení vstupů, překreslování OLED displeje, stavové LED a bzučáku.
