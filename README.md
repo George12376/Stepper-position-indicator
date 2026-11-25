@@ -1,7 +1,8 @@
 # Stepper-position-indicator
 
-![MicroPython](https://img.shields.io/badge/MicroPython-1.29.0-00979D)
-![Libraries](https://img.shields.io/badge/Libraries-machine_%7C_framebuf_%7C_uasyncio-5C2D91)
+![MicroPython](https://img.shields.io/badge/MicroPython-1.24+-blue)
+![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi%20Pico-red)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ## Členové týmu
 * Jiří Vocilka -
