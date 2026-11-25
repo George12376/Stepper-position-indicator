@@ -61,7 +61,7 @@ Před finálním sestavením byly jednotlivé moduly otestovány samostatně pom
 
 ### 1. Stavová indikace ([RGB LED](./tests/test_rgb.py))
 - **Zapojení a funkčnost:** Ověřena správná polarita (společná katoda na `GND`) a reakce všech barevných kanálů.
-- **PWM stavy:** Otestováno plynulé míchání barev pro jednotlivé rychlostní režimy (zelená, žlutá, oranžová) i červené blikání (500 ms) při vypnutém motoru.
+- **PWM stavy:** Otestováno plynulé míchání barev pro jednotlivé rychlosti (zelená – nízká, žlutá – střední, oranžová – vysoká) i červené blikání (500 ms) při vypnutém motoru.
 
 
 
