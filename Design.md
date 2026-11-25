@@ -9,7 +9,11 @@
 
 ## 3D Model 
 
-![3D Model](./Images/3D_Model_V3.png)
+![3D Model](./Images/3D_Model_V4.png)
+
+## Realization 
+![Realization](./Images/Prototype_V1.jpg)
+
 
 ## DPS
 ![Nárvh horná vrstva](./Images/Layer_Top_V2.png).
