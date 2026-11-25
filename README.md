@@ -57,7 +57,7 @@ Tento projekt řeší přesné vizuální zobrazování polohy pomocí krokovéh
 
 ## Testování a ověření (Testing & Verification)
 
-Před finálním sestavením byly jednotlivé hardwarové moduly i programové části otestovány samostatně pomocí testovacích skriptů [`tests/`](./tests).
+Před finálním sestavením byly jednotlivé hardwarové moduly i programové části otestovány samostatně pomocí testovacích skriptů [`tests`](./tests).
 
 
 
