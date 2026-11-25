@@ -31,7 +31,7 @@ Tento projekt řeší přesné vizuální zobrazování polohy pomocí krokovéh
 | 1x | Nema&nbsp;17 | Krokový motor – automaticky otáčí fyzický ukazatel na nově nastavenou polohu. |
 | 1x | A4988 | Motor driver – obvod sloužící k řízení krokového motoru. |
 | 1x | Waveshare&nbsp;1.3&nbsp;inch | Displej – v reálném čase zobrazuje aktuální a cílovou polohu včetně stavových informací. |
-| 2x | ky-040 | Rotační enkodér – jeho otáčením uživatel nastavuje požadovanou cílovou pozici. |
+| 1x | ky-040 | Rotační enkodér – jeho otáčením uživatel nastavuje požadovanou cílovou pozici. |
 | 1x | Mikrospínač | Nastavení počátku (re-zero) – stiskem se kalibruje nulová pozice pro přesné odměřování. |
 | 1x | RGB&nbsp;Led | Stavová indikace – vizuálně signalizuje provozní stavy systému (pohyb motoru, dosažení cíle, nulování). |
 | 1x | Bzučák HW-508 | Zvuková indikace – zaznění tónu při změně stavu motoru|
