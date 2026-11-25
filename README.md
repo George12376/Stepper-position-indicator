@@ -64,6 +64,8 @@ Před finálním sestavením byly jednotlivé moduly otestovány samostatně pom
 - **PWM stavy:** Otestováno plynulé míchání barev pro jednotlivé rychlosti (zelená – nízká, žlutá – střední, oranžová – vysoká) i červené blikání (500 ms) při vypnutém motoru.
 
 ### 2. Zvuková signalizace ([Pasivní bzučák](./tests/buzzer.py))
+- **Generování tónů pomocí PWM:** Ověřeno buzení pasivního měniče signálem PWM (50% střída) a čisté vypnutí výstupu (`duty_u16(0)`) po doznění tónu.
+- **Akustická odezva stavů:** Otestováno přehrání dvoutónových signálů pro rozlišení stavu driveru – vzestupná melodie (1200 Hz → 1800 Hz) při zapnutí a sestupná melodie (1800 Hz → 1000 Hz) při vypnutí ovladače motoru.
 
 
 
